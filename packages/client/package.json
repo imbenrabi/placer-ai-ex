@@ -1,0 +1,37 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "proxy": "http://localhost:3001",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.32.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.4"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.29.25",
+    "@trpc/client": "^10.34.0",
+    "@trpc/react-query": "^10.34.0",
+    "@trpc/server": "^10.34.0"
+  }
+}

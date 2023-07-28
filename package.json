@@ -1,0 +1,9 @@
+{
+  "name": "test-fullstack-env",
+  "scripts": {
+    "clear-install": "rm -rf **/node_modules && rm -rf **/dist && yarn"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
