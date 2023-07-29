@@ -1,8 +1,8 @@
 import { router } from "../utils";
-import { messagesRouter } from "./messages";
+import { meteorsRouter } from "./routers";
 
 export const appRouter = router({
-  messages: messagesRouter,
+  meteors: meteorsRouter
 })
 
 export type AppRouter = typeof appRouter;

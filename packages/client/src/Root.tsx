@@ -3,12 +3,12 @@ import { useTrpcServer } from './hooks';
 
 export const Root = () => {
   const { trpc } = useTrpcServer();
-  const messageQuery = trpc.messages.getMessage.useQuery({ text: 'imbenrabi' });
+  const meterosQuery = trpc.meteors.getMeteorsByYearAndMass.useQuery({});
 
   return (
     <div>
-      <section>Server Data</section>
-      {messageQuery.data?.message}
+      <section>Meteors</section>
+      {meterosQuery.data?.meteors[0]?.name}
     </div>
   )
 }
