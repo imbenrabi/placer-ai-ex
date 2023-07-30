@@ -2,6 +2,7 @@ import { useState, useEffect, ChangeEvent } from "react";
 import { useTrpcServer } from "./useTrpcServer";
 import { useDebounce } from "./useDebounce";
 import { ClientMeteor } from "../../../server/src/types";
+import { fetchMeteors } from "../utils";
 
 const INITIAL_YEAR = 1986 as const;
 
@@ -25,21 +26,9 @@ export const useMeteors = () => {
   useEffect(() => {
     setIsLoading(true);
     (async () => {
-      const meteorsQuery = await trpcClient.meteors.getMeteorsByYearAndMass.query({
-        year,
-        massThresholdFilter: debouncedMassThreshold,
-      })
-      if (meteorsQuery.metadata.resultsCount === 0) {
-        const earliestMeteorsQuery = await trpcClient.meteors.getEarliestMeteorsByMassThreshold.query({
-          massThresholdFilter: debouncedMassThreshold,
-        });
-        if (earliestMeteorsQuery.metadata.resultsCount) {
-          setMeteors(earliestMeteorsQuery.meteors);
-        }
-      } else {
-        setMeteors(meteorsQuery.meteors);
-      }
-
+      const meteorsData = await fetchMeteors({ trpcClient, massThresholdFilter: debouncedMassThreshold, year });
+      meteorsData?.meteors && setMeteors(meteorsData.meteors)
+      meteorsData?.metadata.year && setYear(meteorsData.metadata.year)
     })()
     setIsLoading(false);
   }, [debouncedMassThreshold, year])
