@@ -1,8 +1,8 @@
 import { z } from "zod";
 import { filterMeteorsByMassThresholdAtEarliestYear, publicProcedure, queryMeteorsByYearAndMass, router } from "../../utils";
 
-const GetMeteorsRequestParams = z.object({ year: z.number().nullish(), massThresholdFilter: z.number().nullish() });
-const GetEarliestMeteorsByMassThresholdRequestParams = z.object({ massThresholdFilter: z.number() });
+const GetMeteorsRequestParams = z.object({ year: z.number().nullish(), massThresholdFilter: z.string().nullish() });
+const GetEarliestMeteorsByMassThresholdRequestParams = z.object({ massThresholdFilter: z.string().nullish() });
 
 export const meteorsRouter = router({
   getMeteorsByYearAndMass: publicProcedure.input(GetMeteorsRequestParams).query(

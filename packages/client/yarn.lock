@@ -443,28 +443,10 @@
     picocolors "^1.0.0"
     tslib "^2.6.0"
 
-"@tanstack/query-core@4.29.25":
-  version "4.29.25"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@tanstack/query-core/-/query-core-4.29.25.tgz#605d357968a740544af6754004eed1dfd4587cb8"
-  integrity sha1-YF01eWinQFRK9nVABO7R39RYfLg=
-
-"@tanstack/react-query@^4.29.25":
-  version "4.29.25"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@tanstack/react-query/-/react-query-4.29.25.tgz#64df3260b65760fbd3c81ffae23b7b3802c71aa6"
-  integrity sha1-ZN8yYLZXYPvTyB/64jt7OALHGqY=
-  dependencies:
-    "@tanstack/query-core" "4.29.25"
-    use-sync-external-store "^1.2.0"
-
 "@trpc/client@^10.34.0":
   version "10.34.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@trpc/client/-/client-10.34.0.tgz#cd9bc5ec4801dde24bb343408c7fe203595db538"
   integrity sha1-zZvF7EgB3eJLs0NAjH/iA1ldtTg=
-
-"@trpc/react-query@^10.34.0":
-  version "10.34.0"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@trpc/react-query/-/react-query-10.34.0.tgz#aa4e15d426cf5b320350cddb17bee48587c5c45d"
-  integrity sha1-qk4V1CbPWzIDUM3bF77khYfFxF0=
 
 "@trpc/server@^10.34.0":
   version "10.34.0"
@@ -2411,11 +2393,6 @@ uri-js@^4.2.2:
   integrity sha1-mxpSWVIlhZ5V9mnZKPiMbFfyp34=
   dependencies:
     punycode "^2.1.0"
-
-use-sync-external-store@^1.2.0:
-  version "1.2.0"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
-  integrity sha1-fb79bvP+TnZ6DPXXKHqs+1hGkoo=
 
 vite@^4.4.4:
   version "4.4.4"

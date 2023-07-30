@@ -29,9 +29,7 @@
     "vite": "^4.4.4"
   },
   "dependencies": {
-    "@tanstack/react-query": "^4.29.25",
     "@trpc/client": "^10.34.0",
-    "@trpc/react-query": "^10.34.0",
     "@trpc/server": "^10.34.0"
   }
 }

@@ -2,3 +2,54 @@
 # yarn lockfile v1
 
 
+data-uri-to-buffer@^4.0.0:
+  version "4.0.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/data-uri-to-buffer/-/data-uri-to-buffer-4.0.1.tgz#d8feb2b2881e6a4f58c2e08acfd0e2834e26222e"
+  integrity sha1-2P6ysogeak9YwuCKz9Dig04mIi4=
+
+fetch-blob@^3.1.2, fetch-blob@^3.1.4:
+  version "3.2.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/fetch-blob/-/fetch-blob-3.2.0.tgz#f09b8d4bbd45adc6f0c20b7e787e793e309dcce9"
+  integrity sha1-8JuNS71Frcbwwgt+eH55PjCdzOk=
+  dependencies:
+    node-domexception "^1.0.0"
+    web-streams-polyfill "^3.0.3"
+
+formdata-polyfill@^4.0.10:
+  version "4.0.10"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/formdata-polyfill/-/formdata-polyfill-4.0.10.tgz#24807c31c9d402e002ab3d8c720144ceb8848423"
+  integrity sha1-JIB8McnUAuACqz2McgFEzriEhCM=
+  dependencies:
+    fetch-blob "^3.1.2"
+
+isomorphic-unfetch@^4.0.2:
+  version "4.0.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/isomorphic-unfetch/-/isomorphic-unfetch-4.0.2.tgz#5fc04eeb1053b7b702278e2cf7a3f246cb3a9214"
+  integrity sha1-X8BO6xBTt7cCJ44s96PyRss6khQ=
+  dependencies:
+    node-fetch "^3.2.0"
+    unfetch "^5.0.0"
+
+node-domexception@^1.0.0:
+  version "1.0.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/node-domexception/-/node-domexception-1.0.0.tgz#6888db46a1f71c0b76b3f7555016b63fe64766e5"
+  integrity sha1-aIjbRqH3HAt2s/dVUBa2P+ZHZuU=
+
+node-fetch@^3.2.0:
+  version "3.3.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/node-fetch/-/node-fetch-3.3.2.tgz#d1e889bacdf733b4ff3b2b243eb7a12866a0b78b"
+  integrity sha1-0eiJus33M7T/OyskPrehKGagt4s=
+  dependencies:
+    data-uri-to-buffer "^4.0.0"
+    fetch-blob "^3.1.4"
+    formdata-polyfill "^4.0.10"
+
+unfetch@^5.0.0:
+  version "5.0.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/unfetch/-/unfetch-5.0.0.tgz#8a5b6e5779ebe4dde0049f7d7a81d4a1af99d142"
+  integrity sha1-iltuV3nr5N3gBJ99eoHUoa+Z0UI=
+
+web-streams-polyfill@^3.0.3:
+  version "3.2.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/web-streams-polyfill/-/web-streams-polyfill-3.2.1.tgz#71c2718c52b45fd49dbeee88634b3a60ceab42a6"
+  integrity sha1-ccJxjFK0X9Sdvu6IY0s6YM6rQqY=

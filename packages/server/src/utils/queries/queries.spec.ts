@@ -9,7 +9,7 @@ describe('queryMeteorsByYearAndMass', () => {
     })
   });
   it('should return meteors that match the year and massThreshold', () => {
-    const params = { year: 1951, massThreshold: 500 };
+    const params = { year: 1951, massThreshold: '500' };
     const result = queryMeteorsByYearAndMass(params);
     result.forEach((meteor) => {
       expect(meteor.year).toEqual(1951);
@@ -25,12 +25,12 @@ describe('queryMeteorsByYearAndMass', () => {
 
 describe('filterMeteorsByMassThresholdAtEarliestYear', () => {
   it('should return first year of occurence for specific mass', () => {
-    const params = { massThreshold: 100000 };
+    const params = { massThreshold: '100000' };
     const result = filterMeteorsByMassThresholdAtEarliestYear(params);
     expect(result[0].year).toEqual(1400);
   });
   it('should return empty array for empty data', () => {
-    const params = { massThreshold: 1000000000 };
+    const params = { massThreshold: '1000000000' };
     const result = filterMeteorsByMassThresholdAtEarliestYear(params);
     expect(result).toEqual([]);
   });

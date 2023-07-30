@@ -3,12 +3,12 @@ import { ClientMeteor } from "../../types";
 import { extractYearFromISOString, mapNasaMeteorToClientMeteor } from "../dataBridge";
 
 type QueyMeteorsByYearAndMassParams = {
-  year?: number | null | undefined,
-  massThreshold?: number | null | undefined
+  year: number | null | undefined,
+  massThreshold: string | null | undefined, 
 }
 
 type FilterMeteorsByMassThresholdAtEarliestYearParams = {
-  massThreshold: number,
+  massThreshold?: string | null,
 }
 
 export function queryMeteorsByYearAndMass({ year, massThreshold }: QueyMeteorsByYearAndMassParams): Array<ClientMeteor> {
@@ -19,7 +19,7 @@ export function queryMeteorsByYearAndMass({ year, massThreshold }: QueyMeteorsBy
         if (!massThreshold) {
           return true;
         } else if (meteor.mass && !isNaN(parseInt(meteor.mass))) {
-          return parseInt(meteor.mass) > massThreshold;
+          return parseInt(meteor.mass) > parseInt(massThreshold);
         }
       }
       return false;
@@ -31,7 +31,10 @@ export function queryMeteorsByYearAndMass({ year, massThreshold }: QueyMeteorsBy
 export function filterMeteorsByMassThresholdAtEarliestYear(
   { massThreshold }: FilterMeteorsByMassThresholdAtEarliestYearParams
 ): Array<ClientMeteor> {
-  const filteredMeteors = filterMeteorsByMass(MeteorsDataCollection, massThreshold);
+  if (!massThreshold) {
+    return [];
+  }
+  const filteredMeteors =  filterMeteorsByMass(MeteorsDataCollection, massThreshold);
   const earliestYear = findEarliestYear(filteredMeteors);
 
   if (earliestYear) {
@@ -41,8 +44,8 @@ export function filterMeteorsByMassThresholdAtEarliestYear(
   }
 }
 
-function filterMeteorsByMass(meteors: typeof MeteorsDataCollection, massThreshold: number) {
-  return meteors.filter((meteor) => meteor.mass && !isNaN(parseInt(meteor.mass)) && parseInt(meteor.mass) > massThreshold)
+function filterMeteorsByMass(meteors: typeof MeteorsDataCollection, massThreshold: string) {
+  return meteors.filter((meteor) => meteor.mass && !isNaN(parseInt(meteor.mass)) && !isNaN(parseInt(massThreshold)) && parseInt(meteor.mass) > parseInt(massThreshold)) 
 }
 
 function findEarliestYear(meteors: typeof MeteorsDataCollection): number | undefined {
