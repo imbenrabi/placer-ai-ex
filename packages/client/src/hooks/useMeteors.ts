@@ -4,7 +4,6 @@ import { useDebounce } from "./useDebounce";
 import { ClientMeteor } from "../../../server/src/types";
 import { fetchMeteors } from "../utils";
 import { FormElement } from "@nextui-org/react";
-import { useTimeout } from ".";
 
 const INITIAL_YEAR = 1986 as const;
 
@@ -60,5 +59,6 @@ export const useMeteors = () => {
     massThreshold,
     invalidMassThreshold,
     showYearChangeNotification,
+    setShowYearChangeNotification
   }
 }

@@ -3,7 +3,7 @@ import { Input, Grid, Loading, Row, Table } from "@nextui-org/react";
 import { Header } from "./Header";
 import { useMeteors } from "../../hooks";
 import { ClientMeteor } from "../../../../server/src/types";
-import { YearChangeNotification } from "./YearChangeNotification";
+import { YearChangedPopover } from "./YearChangedPopover";
 
 const TableColumns: Array<keyof Omit<ClientMeteor, 'id'>> = ['name', 'mass', 'year']
 
@@ -16,7 +16,8 @@ export const MeteorBoard = () => {
     massThreshold,
     invalidMassThreshold,
     year,
-    showYearChangeNotification
+    showYearChangeNotification,
+    setShowYearChangeNotification
   } = useMeteors();
 
   return (
@@ -26,7 +27,6 @@ export const MeteorBoard = () => {
           <Header />
         </Grid>
       </Row>
-
       <Row>
         <Grid>
           <Input
@@ -37,23 +37,22 @@ export const MeteorBoard = () => {
             disabled={isLoading}
           />
         </Grid>
-        <Grid >
-          <Input
-            label="Mass Threshold"
-            type="text"
-            value={massThreshold}
-            onChange={handleMassThresholdChange}
-            disabled={isLoading}
-            status={invalidMassThreshold ? 'error' : undefined}
-            helperText={invalidMassThreshold ? "use numbers" : undefined}
-          />
+        <Grid>
+          <YearChangedPopover showYearChangeNotification={showYearChangeNotification} setShowYearChangeNotification={setShowYearChangeNotification}>
+            <Input
+              label="Mass Threshold"
+              type="text"
+              value={massThreshold}
+              onChange={handleMassThresholdChange}
+              disabled={isLoading}
+              status={invalidMassThreshold ? 'error' : undefined}
+              helperText={invalidMassThreshold ? "use numbers" : undefined}
+            />
+          </YearChangedPopover>
         </Grid>
       </Row>
       <Row>
         <Grid>
-          {showYearChangeNotification ?
-            <YearChangeNotification />
-            : null}
           <Table
             aria-label="Meteor Dashboard"
             css={{ minWidth: '30vw', height: "calc($space$14 * 10)" }}
