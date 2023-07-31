@@ -2,12 +2,10 @@ import { useState, useEffect, ChangeEvent } from "react";
 import { useTrpcServer } from "./useTrpcServer";
 import { useDebounce } from "./useDebounce";
 import { ClientMeteor } from "../../../server/src/types";
-import { fetchMeteors } from "../utils";
+import { fetchMeteors, isNumber } from "../utils";
 import { FormElement } from "@nextui-org/react";
 
 const INITIAL_YEAR = 1986 as const;
-
-const isMassThresholdValid = (input: string) => isNaN(Number(input)) ? false : true;
 
 export const useMeteors = () => {
   const { trpcClient } = useTrpcServer();
@@ -16,7 +14,7 @@ export const useMeteors = () => {
   const [showYearChangeNotification, setShowYearChangeNotification] = useState<boolean>(false);
   const [invalidMassThreshold, setInvalidMassThreshold] = useState<boolean>(false);
 
-  const [massThreshold, setMassThreshold] = useState<string | undefined>('0');
+  const [massThreshold, setMassThreshold] = useState<string | undefined>('1');
   const [meteors, setMeteors] = useState<ClientMeteor[] | undefined>([]);
   const [year, setYear] = useState<number | undefined>(INITIAL_YEAR);
 
@@ -26,7 +24,7 @@ export const useMeteors = () => {
     setYear(Number(e.target.value));
   }
   const handleMassThresholdChange = (e: ChangeEvent<FormElement>) => {
-    if (!isMassThresholdValid(e.target.value)) {
+    if (!isNumber(e.target.value)) {
       setInvalidMassThreshold(true);
       return;
     }
