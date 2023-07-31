@@ -178,6 +178,13 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.22.5"
 
+"@babel/runtime@^7.20.1", "@babel/runtime@^7.6.2":
+  version "7.22.6"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@babel/runtime/-/runtime-7.22.6.tgz#57d64b9ae3cff1d67eb067ae117dac087f5bd438"
+  integrity sha1-V9ZLmuPP8dZ+sGeuEX2sCH9b1Dg=
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/template@^7.22.5":
   version "7.22.5"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@babel/template/-/template-7.22.5.tgz#0c8c4d944509875849bd0344ff0050756eefc6ec"
@@ -354,6 +361,45 @@
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@eslint/js/-/js-8.44.0.tgz#961a5903c74139390478bdc808bcde3fc45ab7af"
   integrity sha1-lhpZA8dBOTkEeL3ICLzeP8Rat68=
 
+"@formatjs/ecma402-abstract@1.17.0":
+  version "1.17.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@formatjs/ecma402-abstract/-/ecma402-abstract-1.17.0.tgz#2ce191a3bde4c65c6684e03fa247062a4a294b9e"
+  integrity sha1-LOGRo73kxlxmhOA/okcGKkopS54=
+  dependencies:
+    "@formatjs/intl-localematcher" "0.4.0"
+    tslib "^2.4.0"
+
+"@formatjs/fast-memoize@2.2.0":
+  version "2.2.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@formatjs/fast-memoize/-/fast-memoize-2.2.0.tgz#33bd616d2e486c3e8ef4e68c99648c196887802b"
+  integrity sha1-M71hbS5IbD6O9OaMmWSMGWiHgCs=
+  dependencies:
+    tslib "^2.4.0"
+
+"@formatjs/icu-messageformat-parser@2.6.0":
+  version "2.6.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@formatjs/icu-messageformat-parser/-/icu-messageformat-parser-2.6.0.tgz#b0d58ce8c8f472969c96b5cd0b3ad5522d3a02b7"
+  integrity sha1-sNWM6Mj0cpaclrXNCzrVUi06Arc=
+  dependencies:
+    "@formatjs/ecma402-abstract" "1.17.0"
+    "@formatjs/icu-skeleton-parser" "1.6.0"
+    tslib "^2.4.0"
+
+"@formatjs/icu-skeleton-parser@1.6.0":
+  version "1.6.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@formatjs/icu-skeleton-parser/-/icu-skeleton-parser-1.6.0.tgz#0728be8b6b3656f1a4b8e6e5b0e02dffffc23c6c"
+  integrity sha1-Byi+i2s2VvGkuOblsOAt///CPGw=
+  dependencies:
+    "@formatjs/ecma402-abstract" "1.17.0"
+    tslib "^2.4.0"
+
+"@formatjs/intl-localematcher@0.4.0":
+  version "0.4.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@formatjs/intl-localematcher/-/intl-localematcher-0.4.0.tgz#63bbc37a7c3545a1bf1686072e51d9a3aed98d6b"
+  integrity sha1-Y7vDenw1RaG/FoYHLlHZo67ZjWs=
+  dependencies:
+    tslib "^2.4.0"
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@humanwhocodes/config-array/-/config-array-0.11.10.tgz#5a3ffe32cc9306365fb3fd572596cd602d5e12d2"
@@ -372,6 +418,35 @@
   version "1.2.1"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha1-tSBSnsIdjllFoYUd/Rwy6U45/0U=
+
+"@internationalized/date@^3.0.1", "@internationalized/date@^3.3.0":
+  version "3.3.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@internationalized/date/-/date-3.3.0.tgz#90386d4b4e707f28507d1a1b3cc0e162ad5ee038"
+  integrity sha1-kDhtS05wfyhQfRobPMDhYq1e4Dg=
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+
+"@internationalized/message@^3.0.9", "@internationalized/message@^3.1.1":
+  version "3.1.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@internationalized/message/-/message-3.1.1.tgz#0f29c5a239b5dcd457b55f21dcd38d1a44a1236a"
+  integrity sha1-DynFojm13NRXtV8h3NONGkShI2o=
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+    intl-messageformat "^10.1.0"
+
+"@internationalized/number@^3.1.1", "@internationalized/number@^3.2.1":
+  version "3.2.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@internationalized/number/-/number-3.2.1.tgz#570e4010544a84a8225e65b34a689a36187caaa8"
+  integrity sha1-Vw5AEFRKhKgiXmWzSmiaNhh8qqg=
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+
+"@internationalized/string@^3.0.0", "@internationalized/string@^3.1.1":
+  version "3.1.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@internationalized/string/-/string-3.1.1.tgz#2ab7372d58bbb7ffd3de62fc2a311e4690186981"
+  integrity sha1-Krc3LVi7t//T3mL8KjEeRpAYaYE=
+  dependencies:
+    "@swc/helpers" "^0.5.0"
 
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
@@ -410,6 +485,44 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@nextui-org/react@^1.0.0-beta.13":
+  version "1.0.0-beta.13"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@nextui-org/react/-/react-1.0.0-beta.13.tgz#72ff938071781278d10df2c46b11d7dc83d05012"
+  integrity sha1-cv+TgHF4EnjRDfLEaxHX3IPQUBI=
+  dependencies:
+    "@babel/runtime" "^7.20.1"
+    "@react-aria/button" "3.6.2"
+    "@react-aria/checkbox" "3.6.0"
+    "@react-aria/dialog" "3.4.0"
+    "@react-aria/focus" "3.7.0"
+    "@react-aria/i18n" "3.6.1"
+    "@react-aria/interactions" "3.12.0"
+    "@react-aria/label" "3.4.2"
+    "@react-aria/link" "3.3.4"
+    "@react-aria/menu" "3.6.2"
+    "@react-aria/overlays" "3.11.0"
+    "@react-aria/radio" "3.4.0"
+    "@react-aria/ssr" "3.3.0"
+    "@react-aria/table" "3.5.0"
+    "@react-aria/utils" "3.14.0"
+    "@react-aria/visually-hidden" "3.5.0"
+    "@react-stately/checkbox" "3.3.0"
+    "@react-stately/collections" "3.4.4"
+    "@react-stately/data" "3.7.0"
+    "@react-stately/menu" "3.4.2"
+    "@react-stately/overlays" "3.4.2"
+    "@react-stately/radio" "3.6.0"
+    "@react-stately/table" "3.5.0"
+    "@react-stately/toggle" "3.4.2"
+    "@react-stately/tree" "3.3.4"
+    "@react-types/button" "^3.6.2"
+    "@react-types/checkbox" "3.4.0"
+    "@react-types/grid" "3.1.4"
+    "@react-types/menu" "3.7.2"
+    "@react-types/overlays" "3.6.4"
+    "@react-types/shared" "3.15.0"
+    "@stitches/react" "1.2.8"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -442,6 +555,691 @@
     open "^9.1.0"
     picocolors "^1.0.0"
     tslib "^2.6.0"
+
+"@react-aria/button@3.6.2":
+  version "3.6.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/button/-/button-3.6.2.tgz#ac2e70b46eb12138945146e9e68108c80ddeaca6"
+  integrity sha1-rC5wtG6xITiUUUbp5oEIyA3erKY=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/focus" "^3.9.0"
+    "@react-aria/interactions" "^3.12.0"
+    "@react-aria/utils" "^3.14.0"
+    "@react-stately/toggle" "^3.4.2"
+    "@react-types/button" "^3.6.2"
+    "@react-types/shared" "^3.15.0"
+
+"@react-aria/checkbox@3.6.0":
+  version "3.6.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/checkbox/-/checkbox-3.6.0.tgz#5c09f7be3de2d91e2f6ab0f14d2e588793afc1da"
+  integrity sha1-XAn3vj3i2R4varDxTS5Yh5Ovwdo=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/label" "^3.4.2"
+    "@react-aria/toggle" "^3.4.0"
+    "@react-aria/utils" "^3.14.0"
+    "@react-stately/checkbox" "^3.3.0"
+    "@react-stately/toggle" "^3.4.2"
+    "@react-types/checkbox" "^3.4.0"
+    "@react-types/shared" "^3.15.0"
+
+"@react-aria/dialog@3.4.0":
+  version "3.4.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/dialog/-/dialog-3.4.0.tgz#769f6425fa74792ed445e734baad2d5247228616"
+  integrity sha1-dp9kJfp0eS7URec0uq0tUkcihhY=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/focus" "^3.9.0"
+    "@react-aria/overlays" "^3.11.0"
+    "@react-aria/utils" "^3.14.0"
+    "@react-stately/overlays" "^3.4.2"
+    "@react-types/dialog" "^3.4.4"
+    "@react-types/shared" "^3.15.0"
+
+"@react-aria/focus@3.7.0":
+  version "3.7.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/focus/-/focus-3.7.0.tgz#6a90dc99da64bd145e3eeacf3097a29a0342f709"
+  integrity sha1-apDcmdpkvRRePurPMJeimgNC9wk=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/interactions" "^3.10.0"
+    "@react-aria/utils" "^3.13.2"
+    "@react-types/shared" "^3.14.0"
+    clsx "^1.1.1"
+
+"@react-aria/focus@^3.13.0", "@react-aria/focus@^3.9.0":
+  version "3.13.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/focus/-/focus-3.13.0.tgz#0134112d52a83a53f15b5f7e7435833c6a69d913"
+  integrity sha1-ATQRLVKoOlPxW19+dDWDPGpp2RM=
+  dependencies:
+    "@react-aria/interactions" "^3.16.0"
+    "@react-aria/utils" "^3.18.0"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+    clsx "^1.1.1"
+
+"@react-aria/grid@^3.5.0":
+  version "3.8.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/grid/-/grid-3.8.0.tgz#5b13c952f449f21ae9c3b5bee72376f4974675ab"
+  integrity sha1-WxPJUvRJ8hrpw7W+5yN29JdGdas=
+  dependencies:
+    "@react-aria/focus" "^3.13.0"
+    "@react-aria/i18n" "^3.8.0"
+    "@react-aria/interactions" "^3.16.0"
+    "@react-aria/live-announcer" "^3.3.1"
+    "@react-aria/selection" "^3.16.0"
+    "@react-aria/utils" "^3.18.0"
+    "@react-stately/collections" "^3.9.0"
+    "@react-stately/grid" "^3.7.0"
+    "@react-stately/selection" "^3.13.2"
+    "@react-stately/virtualizer" "^3.6.0"
+    "@react-types/checkbox" "^3.4.4"
+    "@react-types/grid" "^3.1.8"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/i18n@3.6.1":
+  version "3.6.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/i18n/-/i18n-3.6.1.tgz#b97e78e3ec040a5ca08d166033f2d358ef1af4c5"
+  integrity sha1-uX544+wEClygjRZgM/LTWO8a9MU=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@internationalized/date" "^3.0.1"
+    "@internationalized/message" "^3.0.9"
+    "@internationalized/number" "^3.1.1"
+    "@internationalized/string" "^3.0.0"
+    "@react-aria/ssr" "^3.3.0"
+    "@react-aria/utils" "^3.14.0"
+    "@react-types/shared" "^3.15.0"
+
+"@react-aria/i18n@^3.6.1", "@react-aria/i18n@^3.8.0":
+  version "3.8.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/i18n/-/i18n-3.8.0.tgz#fe0c6b9ad9fe1e8a139c4d514d4240164c699bf8"
+  integrity sha1-/gxrmtn+HooTnE1RTUJAFkxpm/g=
+  dependencies:
+    "@internationalized/date" "^3.3.0"
+    "@internationalized/message" "^3.1.1"
+    "@internationalized/number" "^3.2.1"
+    "@internationalized/string" "^3.1.1"
+    "@react-aria/ssr" "^3.7.0"
+    "@react-aria/utils" "^3.18.0"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/interactions@3.12.0":
+  version "3.12.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/interactions/-/interactions-3.12.0.tgz#b16a392c3dc23351c8fd33a16cef0ef93dc4682d"
+  integrity sha1-sWo5LD3CM1HI/TOhbO8O+T3EaC0=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/utils" "^3.14.0"
+    "@react-types/shared" "^3.15.0"
+
+"@react-aria/interactions@^3.10.0", "@react-aria/interactions@^3.12.0", "@react-aria/interactions@^3.16.0":
+  version "3.16.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/interactions/-/interactions-3.16.0.tgz#d3ed51df60d68090114322b853bcc3e9f5f51619"
+  integrity sha1-0+1R32DWgJARQyK4U7zD6fX1Fhk=
+  dependencies:
+    "@react-aria/ssr" "^3.7.0"
+    "@react-aria/utils" "^3.18.0"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/label@3.4.2":
+  version "3.4.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/label/-/label-3.4.2.tgz#c66761891aa7aabe1893608f367c1bab0b8b2d28"
+  integrity sha1-xmdhiRqnqr4Yk2CPNnwbqwuLLSg=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/utils" "^3.14.0"
+    "@react-types/label" "^3.7.0"
+    "@react-types/shared" "^3.15.0"
+
+"@react-aria/label@^3.4.2":
+  version "3.6.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/label/-/label-3.6.0.tgz#9bf353cd0f3577f14285e8032dddcfe1fc37a8e0"
+  integrity sha1-m/NTzQ81d/FChegDLd3P4fw3qOA=
+  dependencies:
+    "@react-aria/utils" "^3.18.0"
+    "@react-types/label" "^3.7.4"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/link@3.3.4":
+  version "3.3.4"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/link/-/link-3.3.4.tgz#705d581c0fe83c37e3a15439839d5d2ebbc1add2"
+  integrity sha1-cF1YHA/oPDfjoVQ5g51dLrvBrdI=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/focus" "^3.9.0"
+    "@react-aria/interactions" "^3.12.0"
+    "@react-aria/utils" "^3.14.0"
+    "@react-types/link" "^3.3.4"
+    "@react-types/shared" "^3.15.0"
+
+"@react-aria/live-announcer@^3.1.1", "@react-aria/live-announcer@^3.3.1":
+  version "3.3.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/live-announcer/-/live-announcer-3.3.1.tgz#bf864b8820fb02daaeefc1c972782a0174fd60b9"
+  integrity sha1-v4ZLiCD7Atqu78HJcngqAXT9YLk=
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/menu@3.6.2":
+  version "3.6.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/menu/-/menu-3.6.2.tgz#9061a603075dcb25bc916843a697d6c5dcb5c69b"
+  integrity sha1-kGGmAwddyyW8kWhDppfWxdy1xps=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/i18n" "^3.6.1"
+    "@react-aria/interactions" "^3.12.0"
+    "@react-aria/overlays" "^3.11.0"
+    "@react-aria/selection" "^3.11.0"
+    "@react-aria/utils" "^3.14.0"
+    "@react-stately/collections" "^3.4.4"
+    "@react-stately/menu" "^3.4.2"
+    "@react-stately/tree" "^3.3.4"
+    "@react-types/button" "^3.6.2"
+    "@react-types/menu" "^3.7.2"
+    "@react-types/shared" "^3.15.0"
+
+"@react-aria/overlays@3.11.0":
+  version "3.11.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/overlays/-/overlays-3.11.0.tgz#9ecab7fbaf88b7c315215d55a3eb1ae1aa5b78f2"
+  integrity sha1-nsq3+6+It8MVIV1Vo+sa4apbePI=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/focus" "^3.9.0"
+    "@react-aria/i18n" "^3.6.1"
+    "@react-aria/interactions" "^3.12.0"
+    "@react-aria/ssr" "^3.3.0"
+    "@react-aria/utils" "^3.14.0"
+    "@react-aria/visually-hidden" "^3.5.0"
+    "@react-stately/overlays" "^3.4.2"
+    "@react-types/button" "^3.6.2"
+    "@react-types/overlays" "^3.6.4"
+    "@react-types/shared" "^3.15.0"
+
+"@react-aria/overlays@^3.11.0":
+  version "3.15.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/overlays/-/overlays-3.15.0.tgz#9ae71209735b9020921c02a6603bae58f25bcbc9"
+  integrity sha1-mucSCXNbkCCSHAKmYDuuWPJby8k=
+  dependencies:
+    "@react-aria/focus" "^3.13.0"
+    "@react-aria/i18n" "^3.8.0"
+    "@react-aria/interactions" "^3.16.0"
+    "@react-aria/ssr" "^3.7.0"
+    "@react-aria/utils" "^3.18.0"
+    "@react-aria/visually-hidden" "^3.8.2"
+    "@react-stately/overlays" "^3.6.0"
+    "@react-types/button" "^3.7.3"
+    "@react-types/overlays" "^3.8.0"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/radio@3.4.0":
+  version "3.4.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/radio/-/radio-3.4.0.tgz#4cc930dee71b3bae70f9ceaed7085f7db4d448b4"
+  integrity sha1-TMkw3ucbO65w+c6u1whffbTUSLQ=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/focus" "^3.9.0"
+    "@react-aria/i18n" "^3.6.1"
+    "@react-aria/interactions" "^3.12.0"
+    "@react-aria/label" "^3.4.2"
+    "@react-aria/utils" "^3.14.0"
+    "@react-stately/radio" "^3.6.0"
+    "@react-types/radio" "^3.3.0"
+    "@react-types/shared" "^3.15.0"
+
+"@react-aria/selection@^3.11.0", "@react-aria/selection@^3.16.0":
+  version "3.16.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/selection/-/selection-3.16.0.tgz#827cf8056b218813dafeca48d10e9d91b475ee12"
+  integrity sha1-gnz4BWshiBPa/spI0Q6dkbR17hI=
+  dependencies:
+    "@react-aria/focus" "^3.13.0"
+    "@react-aria/i18n" "^3.8.0"
+    "@react-aria/interactions" "^3.16.0"
+    "@react-aria/utils" "^3.18.0"
+    "@react-stately/collections" "^3.9.0"
+    "@react-stately/selection" "^3.13.2"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/ssr@3.3.0":
+  version "3.3.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/ssr/-/ssr-3.3.0.tgz#25e81daf0c7a270a4a891159d8d984578e4512d8"
+  integrity sha1-Jegdrwx6JwpKiRFZ2NmEV45FEtg=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+
+"@react-aria/ssr@^3.3.0", "@react-aria/ssr@^3.7.0":
+  version "3.7.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/ssr/-/ssr-3.7.0.tgz#7eda2964ab792dc1c3a1fdacbf5bfb185590e9a5"
+  integrity sha1-ftopZKt5LcHDof2sv1v7GFWQ6aU=
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/table@3.5.0":
+  version "3.5.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/table/-/table-3.5.0.tgz#e7d8bf14de8d7ccb76090fd4bf9338764ed52690"
+  integrity sha1-59i/FN6NfMt2CQ/Uv5M4dk7VJpA=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/focus" "^3.9.0"
+    "@react-aria/grid" "^3.5.0"
+    "@react-aria/i18n" "^3.6.1"
+    "@react-aria/interactions" "^3.12.0"
+    "@react-aria/live-announcer" "^3.1.1"
+    "@react-aria/selection" "^3.11.0"
+    "@react-aria/utils" "^3.14.0"
+    "@react-stately/table" "^3.5.0"
+    "@react-stately/virtualizer" "^3.3.1"
+    "@react-types/checkbox" "^3.4.0"
+    "@react-types/grid" "^3.1.4"
+    "@react-types/shared" "^3.15.0"
+    "@react-types/table" "^3.3.2"
+
+"@react-aria/toggle@^3.4.0":
+  version "3.6.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/toggle/-/toggle-3.6.2.tgz#901ec6098888ab3fdf19dc6b0bfe2b1409edc7dc"
+  integrity sha1-kB7GCYiIqz/fGdxrC/4rFAntx9w=
+  dependencies:
+    "@react-aria/focus" "^3.13.0"
+    "@react-aria/interactions" "^3.16.0"
+    "@react-aria/utils" "^3.18.0"
+    "@react-stately/toggle" "^3.6.0"
+    "@react-types/checkbox" "^3.4.4"
+    "@react-types/shared" "^3.18.1"
+    "@react-types/switch" "^3.3.2"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/utils@3.14.0":
+  version "3.14.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/utils/-/utils-3.14.0.tgz#87877e89e959c8b6299da953ec3a7167de2192c3"
+  integrity sha1-h4d+ielZyLYpnalT7DpxZ94hksM=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/ssr" "^3.3.0"
+    "@react-stately/utils" "^3.5.1"
+    "@react-types/shared" "^3.15.0"
+    clsx "^1.1.1"
+
+"@react-aria/utils@^3.13.2", "@react-aria/utils@^3.14.0", "@react-aria/utils@^3.18.0":
+  version "3.18.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/utils/-/utils-3.18.0.tgz#50e555ac049f47bff25bc2cef1078352e853d229"
+  integrity sha1-UOVVrASfR7/yW8LO8QeDUuhT0ik=
+  dependencies:
+    "@react-aria/ssr" "^3.7.0"
+    "@react-stately/utils" "^3.7.0"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+    clsx "^1.1.1"
+
+"@react-aria/visually-hidden@3.5.0":
+  version "3.5.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/visually-hidden/-/visually-hidden-3.5.0.tgz#aa8669545464cdb6a4b2ba47c9695d1405864a06"
+  integrity sha1-qoZpVFRkzbaksrpHyWldFAWGSgY=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/interactions" "^3.12.0"
+    "@react-aria/utils" "^3.14.0"
+    "@react-types/shared" "^3.15.0"
+    clsx "^1.1.1"
+
+"@react-aria/visually-hidden@^3.5.0", "@react-aria/visually-hidden@^3.8.2":
+  version "3.8.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-aria/visually-hidden/-/visually-hidden-3.8.2.tgz#96601a0b8d301348dec4da89789f94723de6b034"
+  integrity sha1-lmAaC40wE0jexNqJeJ+Ucj3msDQ=
+  dependencies:
+    "@react-aria/interactions" "^3.16.0"
+    "@react-aria/utils" "^3.18.0"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+    clsx "^1.1.1"
+
+"@react-stately/checkbox@3.3.0":
+  version "3.3.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/checkbox/-/checkbox-3.3.0.tgz#31cb5dedbb10b9ab7358f79228f34d09e0f1bf5f"
+  integrity sha1-Mctd7bsQuatzWPeSKPNNCeDxv18=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-stately/toggle" "^3.4.2"
+    "@react-stately/utils" "^3.5.1"
+    "@react-types/checkbox" "^3.4.0"
+    "@react-types/shared" "^3.15.0"
+
+"@react-stately/checkbox@^3.3.0":
+  version "3.4.3"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/checkbox/-/checkbox-3.4.3.tgz#ffbf8109ca903e502a1e42cf0863e22c8f75c07e"
+  integrity sha1-/7+BCcqQPlAqHkLPCGPiLI91wH4=
+  dependencies:
+    "@react-stately/toggle" "^3.6.0"
+    "@react-stately/utils" "^3.7.0"
+    "@react-types/checkbox" "^3.4.4"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/collections@3.4.4":
+  version "3.4.4"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/collections/-/collections-3.4.4.tgz#9df0b690bac0d3a95bc01352937ec74160c6bd29"
+  integrity sha1-nfC2kLrA06lbwBNSk37HQWDGvSk=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-types/shared" "^3.15.0"
+
+"@react-stately/collections@^3.4.4", "@react-stately/collections@^3.9.0":
+  version "3.9.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/collections/-/collections-3.9.0.tgz#8a9e621fb10e370bd0329f96dd141bc6dcd0e548"
+  integrity sha1-ip5iH7EONwvQMp+W3RQbxtzQ5Ug=
+  dependencies:
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/data@3.7.0":
+  version "3.7.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/data/-/data-3.7.0.tgz#dc7267d8fa58537880bb23ad8d62cb38b295ae82"
+  integrity sha1-3HJn2PpYU3iAuyOtjWLLOLKVroI=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-types/shared" "^3.15.0"
+
+"@react-stately/grid@^3.4.0", "@react-stately/grid@^3.7.0":
+  version "3.7.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/grid/-/grid-3.7.0.tgz#0f757a7010460d92d3373d769194d871a5cf4ae3"
+  integrity sha1-D3V6cBBGDZLTNz12kZTYcaXPSuM=
+  dependencies:
+    "@react-stately/collections" "^3.9.0"
+    "@react-stately/selection" "^3.13.2"
+    "@react-types/grid" "^3.1.8"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/menu@3.4.2":
+  version "3.4.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/menu/-/menu-3.4.2.tgz#5bb6847c9bf4a6140d561114b5f8709a4df12a51"
+  integrity sha1-W7aEfJv0phQNVhEUtfhwmk3xKlE=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-stately/overlays" "^3.4.2"
+    "@react-stately/utils" "^3.5.1"
+    "@react-types/menu" "^3.7.2"
+    "@react-types/shared" "^3.15.0"
+
+"@react-stately/menu@^3.4.2":
+  version "3.5.3"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/menu/-/menu-3.5.3.tgz#c25fc231502cae639f5b557a9e1d8016a7e474cc"
+  integrity sha1-wl/CMVAsrmOfW1V6nh2AFqfkdMw=
+  dependencies:
+    "@react-stately/overlays" "^3.6.0"
+    "@react-stately/utils" "^3.7.0"
+    "@react-types/menu" "^3.9.2"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/overlays@3.4.2":
+  version "3.4.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/overlays/-/overlays-3.4.2.tgz#c6df94a65551137075263eeef70beba8b90b52a0"
+  integrity sha1-xt+UplVRE3B1Jj7u9wvrqLkLUqA=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-stately/utils" "^3.5.1"
+    "@react-types/overlays" "^3.6.4"
+
+"@react-stately/overlays@^3.4.2", "@react-stately/overlays@^3.6.0":
+  version "3.6.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/overlays/-/overlays-3.6.0.tgz#d53fedf3fec0e3a4db1c2a3b643b5cad09f9a88c"
+  integrity sha1-1T/t8/7A46TbHCo7ZDtcrQn5qIw=
+  dependencies:
+    "@react-stately/utils" "^3.7.0"
+    "@react-types/overlays" "^3.8.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/radio@3.6.0":
+  version "3.6.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/radio/-/radio-3.6.0.tgz#85846c0d3bd906cddccfb897eb900a5fd527d962"
+  integrity sha1-hYRsDTvZBs3cz7iX65AKX9Un2WI=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-stately/utils" "^3.5.1"
+    "@react-types/radio" "^3.3.0"
+    "@react-types/shared" "^3.15.0"
+
+"@react-stately/radio@^3.6.0":
+  version "3.8.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/radio/-/radio-3.8.2.tgz#e7f541211f67fb821b4e47c16b8401f93034139d"
+  integrity sha1-5/VBIR9n+4IbTkfBa4QB+TA0E50=
+  dependencies:
+    "@react-stately/utils" "^3.7.0"
+    "@react-types/radio" "^3.4.2"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/selection@^3.11.0", "@react-stately/selection@^3.13.2":
+  version "3.13.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/selection/-/selection-3.13.2.tgz#9b0b717b0da4c84ec412a0e5068f6798ec37ddbd"
+  integrity sha1-mwtxew2kyE7EEqDlBo9nmOw33b0=
+  dependencies:
+    "@react-stately/collections" "^3.9.0"
+    "@react-stately/utils" "^3.7.0"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/table@3.5.0":
+  version "3.5.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/table/-/table-3.5.0.tgz#6c436be31c5de13ef6a179934296d85ed96dd21c"
+  integrity sha1-bENr4xxd4T72oXmTQpbYXtlt0hw=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-stately/collections" "^3.4.4"
+    "@react-stately/grid" "^3.4.0"
+    "@react-stately/selection" "^3.11.0"
+    "@react-types/grid" "^3.1.4"
+    "@react-types/shared" "^3.15.0"
+    "@react-types/table" "^3.3.2"
+
+"@react-stately/table@^3.5.0":
+  version "3.10.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/table/-/table-3.10.0.tgz#2a88459debd9dcd408a073561474277685d737d5"
+  integrity sha1-KohFnevZ3NQIoHNWFHQndoXXN9U=
+  dependencies:
+    "@react-stately/collections" "^3.9.0"
+    "@react-stately/grid" "^3.7.0"
+    "@react-stately/selection" "^3.13.2"
+    "@react-types/grid" "^3.1.8"
+    "@react-types/shared" "^3.18.1"
+    "@react-types/table" "^3.7.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/toggle@3.4.2":
+  version "3.4.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/toggle/-/toggle-3.4.2.tgz#8c70922ad559d9ef32ecf3cc3d122a66eb858f0d"
+  integrity sha1-jHCSKtVZ2e8y7PPMPRIqZuuFjw0=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-stately/utils" "^3.5.1"
+    "@react-types/checkbox" "^3.4.0"
+    "@react-types/shared" "^3.15.0"
+
+"@react-stately/toggle@^3.4.2", "@react-stately/toggle@^3.6.0":
+  version "3.6.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/toggle/-/toggle-3.6.0.tgz#d1cd5a316ee1ee23003c2ed950816b8d314239fe"
+  integrity sha1-0c1aMW7h7iMAPC7ZUIFrjTFCOf4=
+  dependencies:
+    "@react-stately/utils" "^3.7.0"
+    "@react-types/checkbox" "^3.4.4"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/tree@3.3.4":
+  version "3.3.4"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/tree/-/tree-3.3.4.tgz#2b71436dd7ed3bd42983f4fd29a9417f947876f9"
+  integrity sha1-K3FDbdftO9Qpg/T9KalBf5R4dvk=
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-stately/collections" "^3.4.4"
+    "@react-stately/selection" "^3.11.0"
+    "@react-stately/utils" "^3.5.1"
+    "@react-types/shared" "^3.15.0"
+
+"@react-stately/tree@^3.3.4":
+  version "3.7.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/tree/-/tree-3.7.0.tgz#fe658143cfec2d50921eeb7a9d2fad9c84b94dc8"
+  integrity sha1-/mWBQ8/sLVCSHut6nS+tnIS5Tcg=
+  dependencies:
+    "@react-stately/collections" "^3.9.0"
+    "@react-stately/selection" "^3.13.2"
+    "@react-stately/utils" "^3.7.0"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/utils@^3.5.1", "@react-stately/utils@^3.7.0":
+  version "3.7.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/utils/-/utils-3.7.0.tgz#ea99c2c4b5fba7e5079434a1de1ef53fbb21f6a8"
+  integrity sha1-6pnCxLX7p+UHlDSh3h71P7sh9qg=
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/virtualizer@^3.3.1", "@react-stately/virtualizer@^3.6.0":
+  version "3.6.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-stately/virtualizer/-/virtualizer-3.6.0.tgz#ab11a0263041f4d7e5b2ecf1165b68bed2972166"
+  integrity sha1-qxGgJjBB9NflsuzxFltovtKXIWY=
+  dependencies:
+    "@react-aria/utils" "^3.18.0"
+    "@react-types/shared" "^3.18.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-types/button@^3.6.2", "@react-types/button@^3.7.3":
+  version "3.7.3"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/button/-/button-3.7.3.tgz#00ad45ff0a304a6f6ef29a5d6adda73cea10942f"
+  integrity sha1-AK1F/wowSm9u8ppdat2nPOoQlC8=
+  dependencies:
+    "@react-types/shared" "^3.18.1"
+
+"@react-types/checkbox@3.4.0":
+  version "3.4.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/checkbox/-/checkbox-3.4.0.tgz#f2d6acabdf953cf2f7b8b874dab9ac8ae1c020fa"
+  integrity sha1-8tasq9+VPPL3uLh02rmsiuHAIPo=
+  dependencies:
+    "@react-types/shared" "^3.15.0"
+
+"@react-types/checkbox@^3.4.0", "@react-types/checkbox@^3.4.4":
+  version "3.4.4"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/checkbox/-/checkbox-3.4.4.tgz#cf55e9fd0cabef6e4408d03b308c754e1add3bc1"
+  integrity sha1-z1Xp/Qyr725ECNA7MIx1ThrdO8E=
+  dependencies:
+    "@react-types/shared" "^3.18.1"
+
+"@react-types/dialog@^3.4.4":
+  version "3.5.3"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/dialog/-/dialog-3.5.3.tgz#049e300372451190698ecf7d6e1ef559ab9fb962"
+  integrity sha1-BJ4wA3JFEZBpjs99bh71WaufuWI=
+  dependencies:
+    "@react-types/overlays" "^3.8.0"
+    "@react-types/shared" "^3.18.1"
+
+"@react-types/grid@3.1.4":
+  version "3.1.4"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/grid/-/grid-3.1.4.tgz#2275b2f83716e4a0f8aab3e53c5cbc27734b7531"
+  integrity sha1-InWy+DcW5KD4qrPlPFy8J3NLdTE=
+  dependencies:
+    "@react-types/shared" "^3.15.0"
+
+"@react-types/grid@^3.1.4", "@react-types/grid@^3.1.8":
+  version "3.1.8"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/grid/-/grid-3.1.8.tgz#2d8cf3ccbb2bba161917b9e242f920fed5f34026"
+  integrity sha1-LYzzzLsruhYZF7niQvkg/tXzQCY=
+  dependencies:
+    "@react-types/shared" "^3.18.1"
+
+"@react-types/label@^3.7.0", "@react-types/label@^3.7.4":
+  version "3.7.4"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/label/-/label-3.7.4.tgz#db7ce5cc82785b11ed4c80308b2ec40768fec6e0"
+  integrity sha1-23zlzIJ4WxHtTIAwiy7EB2j+xuA=
+  dependencies:
+    "@react-types/shared" "^3.18.1"
+
+"@react-types/link@^3.3.4":
+  version "3.4.3"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/link/-/link-3.4.3.tgz#51534673ea35cf6583b950319bafd16ff76296dc"
+  integrity sha1-UVNGc+o1z2WDuVAxm6/Rb/diltw=
+  dependencies:
+    "@react-aria/interactions" "^3.16.0"
+    "@react-types/shared" "^3.18.1"
+
+"@react-types/menu@3.7.2":
+  version "3.7.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/menu/-/menu-3.7.2.tgz#04a0447f791a7ffa0a6c8dc160cbff3bbeeedefd"
+  integrity sha1-BKBEf3kaf/oKbI3BYMv/O77u3v0=
+  dependencies:
+    "@react-types/overlays" "^3.6.4"
+    "@react-types/shared" "^3.15.0"
+
+"@react-types/menu@^3.7.2", "@react-types/menu@^3.9.2":
+  version "3.9.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/menu/-/menu-3.9.2.tgz#e3a269fd687994495a3f8f104ca133487273874e"
+  integrity sha1-46Jp/Wh5lElaP48QTKEzSHJzh04=
+  dependencies:
+    "@react-types/overlays" "^3.8.0"
+    "@react-types/shared" "^3.18.1"
+
+"@react-types/overlays@3.6.4":
+  version "3.6.4"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/overlays/-/overlays-3.6.4.tgz#4ae4d7b3b38c45d122b0ca2dc88a57f08e89fd0e"
+  integrity sha1-SuTXs7OMRdEisMotyIpX8I6J/Q4=
+  dependencies:
+    "@react-types/shared" "^3.15.0"
+
+"@react-types/overlays@^3.6.4", "@react-types/overlays@^3.8.0":
+  version "3.8.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/overlays/-/overlays-3.8.0.tgz#23d74b59be65b5c56e28f30da6ea1e9a83bba05f"
+  integrity sha1-I9dLWb5ltcVuKPMNpuoemoO7oF8=
+  dependencies:
+    "@react-types/shared" "^3.18.1"
+
+"@react-types/radio@^3.3.0", "@react-types/radio@^3.4.2":
+  version "3.4.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/radio/-/radio-3.4.2.tgz#4a6a1f7ff11b71b6b69d13d28fd74de9c903df8c"
+  integrity sha1-Smoff/Ebcba2nRPSj9dN6ckD34w=
+  dependencies:
+    "@react-types/shared" "^3.18.1"
+
+"@react-types/shared@3.15.0":
+  version "3.15.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/shared/-/shared-3.15.0.tgz#a4a78f36bc8daaefe6e9a9df1f453271639c2233"
+  integrity sha1-pKePNryNqu/m6anfH0UycWOcIjM=
+
+"@react-types/shared@^3.14.0", "@react-types/shared@^3.15.0", "@react-types/shared@^3.18.1":
+  version "3.18.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/shared/-/shared-3.18.1.tgz#45bac7a1a433916d16535ea583d86a2b4c72ff8c"
+  integrity sha1-RbrHoaQzkW0WU16lg9hqK0xy/4w=
+
+"@react-types/switch@^3.3.2":
+  version "3.3.2"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/switch/-/switch-3.3.2.tgz#af54e2dd8b599df3214360f593827c9033478ce4"
+  integrity sha1-r1Ti3YtZnfMhQ2D1k4J8kDNHjOQ=
+  dependencies:
+    "@react-types/checkbox" "^3.4.4"
+    "@react-types/shared" "^3.18.1"
+
+"@react-types/table@^3.3.2", "@react-types/table@^3.7.0":
+  version "3.7.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-types/table/-/table-3.7.0.tgz#61f3c3eac2c894c848323b55d7520999a17a7816"
+  integrity sha1-YfPD6sLIlMhIMjtV11IJmaF6eBY=
+  dependencies:
+    "@react-types/grid" "^3.1.8"
+    "@react-types/shared" "^3.18.1"
+
+"@stitches/react@1.2.8":
+  version "1.2.8"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@stitches/react/-/react-1.2.8.tgz#954f8008be8d9c65c4e58efa0937f32388ce3a38"
+  integrity sha1-lU+ACL6NnGXE5Y76CTfzI4jOOjg=
+
+"@swc/helpers@^0.5.0":
+  version "0.5.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@swc/helpers/-/helpers-0.5.1.tgz#e9031491aa3f26bfcc974a67f48bd456c8a5357a"
+  integrity sha1-6QMUkao/Jr/Ml0pn9IvUVsilNXo=
+  dependencies:
+    tslib "^2.4.0"
 
 "@trpc/client@^10.34.0":
   version "10.34.0"
@@ -786,6 +1584,11 @@ chalk@^4.0.0:
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
+
+clsx@^1.1.1:
+  version "1.2.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
+  integrity sha1-DdxKIKVJtZyTpBFrsm9SlMoX3BI=
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -1502,6 +2305,16 @@ internal-slot@^1.0.3, internal-slot@^1.0.5:
     has "^1.0.3"
     side-channel "^1.0.4"
 
+intl-messageformat@^10.1.0:
+  version "10.5.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/intl-messageformat/-/intl-messageformat-10.5.0.tgz#86d11b15913ac954075b25253f5e669359f89538"
+  integrity sha1-htEbFZE6yVQHWyUlP15mk1n4lTg=
+  dependencies:
+    "@formatjs/ecma402-abstract" "1.17.0"
+    "@formatjs/fast-memoize" "2.2.0"
+    "@formatjs/icu-messageformat-parser" "2.6.0"
+    tslib "^2.4.0"
+
 is-array-buffer@^3.0.1, is-array-buffer@^3.0.2:
   version "3.0.2"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/is-array-buffer/-/is-array-buffer-3.0.2.tgz#f2653ced8412081638ecb0ebbd0c41c6e0aecbbe"
@@ -2056,6 +2869,11 @@ react@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
 
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha1-9tyj587sIFkNB62nhWNqkM3KF/k=
+
 regexp.prototype.flags@^1.4.3, regexp.prototype.flags@^1.5.0:
   version "1.5.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/regexp.prototype.flags/-/regexp.prototype.flags-1.5.0.tgz#fe7ce25e7e4cca8db37b6634c8a2c7009199b9cb"
@@ -2303,7 +3121,7 @@ ts-api-utils@^1.0.1:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/ts-api-utils/-/ts-api-utils-1.0.1.tgz#8144e811d44c749cd65b2da305a032510774452d"
   integrity sha1-gUToEdRMdJzWWy2jBaAyUQd0RS0=
 
-tslib@^2.5.0, tslib@^2.6.0:
+tslib@^2.4.0, tslib@^2.5.0, tslib@^2.6.0:
   version "2.6.1"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/tslib/-/tslib-2.6.1.tgz#fd8c9a0ff42590b25703c0acb3de3d3f4ede0410"
   integrity sha1-/YyaD/QlkLJXA8Css949P07eBBA=

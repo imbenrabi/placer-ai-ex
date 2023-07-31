@@ -3,23 +3,37 @@ import { useTrpcServer } from "./useTrpcServer";
 import { useDebounce } from "./useDebounce";
 import { ClientMeteor } from "../../../server/src/types";
 import { fetchMeteors } from "../utils";
+import { FormElement } from "@nextui-org/react";
+import { useTimeout } from ".";
 
 const INITIAL_YEAR = 1986 as const;
+
+const isMassThresholdValid = (input: string) => isNaN(Number(input)) ? false : true;
 
 export const useMeteors = () => {
   const { trpcClient } = useTrpcServer();
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [showYearChangeNotification, setShowYearChangeNotification] = useState<boolean>(false);
+  const [invalidMassThreshold, setInvalidMassThreshold] = useState<boolean>(false);
+
   const [massThreshold, setMassThreshold] = useState<string | undefined>('0');
   const [meteors, setMeteors] = useState<ClientMeteor[] | undefined>([]);
   const [year, setYear] = useState<number | undefined>(INITIAL_YEAR);
 
   const debouncedMassThreshold = useDebounce(massThreshold, 500);
 
-  const handleYearChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleYearChange = (e: ChangeEvent<FormElement>) => {
     setYear(Number(e.target.value));
   }
-  const handleMassThresholdChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleMassThresholdChange = (e: ChangeEvent<FormElement>) => {
+    if (!isMassThresholdValid(e.target.value)) {
+      setInvalidMassThreshold(true);
+      return;
+    }
+    if (invalidMassThreshold) {
+      setInvalidMassThreshold(false)
+    }
     setMassThreshold(e.target.value);
   }
 
@@ -29,6 +43,10 @@ export const useMeteors = () => {
       const meteorsData = await fetchMeteors({ trpcClient, massThresholdFilter: debouncedMassThreshold, year });
       meteorsData?.meteors && setMeteors(meteorsData.meteors)
       meteorsData?.metadata.year && setYear(meteorsData.metadata.year)
+      if (meteorsData?.metadata.year) {
+        setShowYearChangeNotification(true);
+        setYear(meteorsData.metadata.year);
+      }
     })()
     setIsLoading(false);
   }, [debouncedMassThreshold, year])
@@ -40,5 +58,7 @@ export const useMeteors = () => {
     meteors,
     year,
     massThreshold,
+    invalidMassThreshold,
+    showYearChangeNotification,
   }
 }
