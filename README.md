@@ -4,7 +4,7 @@ ROCKS is a web application that allows users to interact with Nasa's meteor data
 
 ## Installation
 
-To install the necessary dependencies, run the following command from project root:
+To install the necessary dependencies, run the following command in project root:
 
 ```bash
   yarn install
@@ -12,7 +12,7 @@ To install the necessary dependencies, run the following command from project ro
 
 ## Start Dev Server
 
-To start the server, use the following command from project root:
+To start the server, use the following command in project root:
 
 ```bash
   yarn run start:server
@@ -20,7 +20,7 @@ To start the server, use the following command from project root:
 
 ## Start Client
 
-To start the client, use the following command from project root:
+To start the client, use the following command in project root:
 
 ```bash
   yarn run start:client
@@ -28,8 +28,8 @@ To start the client, use the following command from project root:
 
 ## Features
 
-- I took json data file as if database (excluding the async server queries) 
-- trpc for server and clients
+- trpc server
+- trpc react client
 - debouncing free text requests
 - NextUI as design system
 
