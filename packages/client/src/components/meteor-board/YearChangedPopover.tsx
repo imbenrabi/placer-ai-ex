@@ -7,7 +7,7 @@ interface YearChangedPopoverProps {
   setShowYearChangeNotificationToFalse: () => void
 }
 
-export const YearChangedPopover: React.FC<YearChangedPopoverProps> = ({ children, setShowYearChangeNotificationToFalse, showYearChangeNotification }) => {
+export const YearChangedPopover: React.FC<YearChangedPopoverProps> = ({ setShowYearChangeNotificationToFalse, showYearChangeNotification }) => {
   return (
     <Popover isOpen={showYearChangeNotification} onOpenChange={setShowYearChangeNotificationToFalse} placement='right'>
       <Popover.Trigger>
