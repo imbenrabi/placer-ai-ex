@@ -17,7 +17,7 @@ describe('queryMeteorsByYearAndMass', () => {
     });
   });
   it('should return all meteors if no params', () => {
-    const params = {};
+    const params = { year: undefined, massThreshold: undefined };
     const result = queryMeteorsByYearAndMass(params);
     expect(result.length).toBeGreaterThan(1);
   })
