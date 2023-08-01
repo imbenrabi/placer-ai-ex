@@ -5,12 +5,12 @@ import { Popover, Text } from '@nextui-org/react';
 interface YearChangedPopoverProps {
   children: React.ReactNode;
   showYearChangeNotification: boolean;
-  setShowYearChangeNotification: React.Dispatch<React.SetStateAction<boolean>>;
+  setShowYearChangeNotificationToFalse: () => void
 }
 
-export const YearChangedPopover: React.FC<YearChangedPopoverProps> = ({ children, setShowYearChangeNotification, showYearChangeNotification }) => {
+export const YearChangedPopover: React.FC<YearChangedPopoverProps> = ({ children, setShowYearChangeNotificationToFalse, showYearChangeNotification }) => {
   return (
-    <Popover isOpen={showYearChangeNotification} onOpenChange={() => setShowYearChangeNotification(false)}>
+    <Popover isOpen={showYearChangeNotification} onOpenChange={setShowYearChangeNotificationToFalse}>
       <Popover.Trigger>
         {children}
       </Popover.Trigger>

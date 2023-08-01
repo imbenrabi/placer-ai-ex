@@ -17,7 +17,7 @@ export const MeteorBoard = () => {
     invalidMassThreshold,
     year,
     showYearChangeNotification,
-    setShowYearChangeNotification
+    setShowYearNotificationToFalse
   } = useMeteors();
 
   return (
@@ -38,7 +38,7 @@ export const MeteorBoard = () => {
           />
         </Grid>
         <Grid>
-          <YearChangedPopover showYearChangeNotification={showYearChangeNotification} setShowYearChangeNotification={setShowYearChangeNotification}>
+          <YearChangedPopover showYearChangeNotification={showYearChangeNotification} setShowYearChangeNotificationToFalse={setShowYearNotificationToFalse}>
             <Input
               label="Mass Threshold"
               type="text"

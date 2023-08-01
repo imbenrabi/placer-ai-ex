@@ -4,14 +4,16 @@ import { useDebounce } from "./useDebounce";
 import { ClientMeteor } from "../../../server/src/types";
 import { fetchMeteors, isNumber } from "../utils";
 import { FormElement } from "@nextui-org/react";
+import { useBoolean } from "./useBoolean";
 
 const INITIAL_YEAR = 1986 as const;
 
 export const useMeteors = () => {
   const { trpcClient } = useTrpcServer();
 
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [showYearChangeNotification, setShowYearChangeNotification] = useState<boolean>(false);
+  const { value: isLoading, setValueToFalse: setIsLoadingToFalse, setValueToTrue: setIsLoadingToTrue } = useBoolean();
+  const { value: showYearChangeNotification, setValueToFalse: setShowYearNotificationToFalse, setValueToTrue: setShowYearNotificationToTrue } = useBoolean();
+
   const [invalidMassThreshold, setInvalidMassThreshold] = useState<boolean>(false);
 
   const [massThreshold, setMassThreshold] = useState<string | undefined>('1');
@@ -35,17 +37,17 @@ export const useMeteors = () => {
   }
 
   useEffect(() => {
-    setIsLoading(true);
+    setIsLoadingToTrue();
     (async () => {
       const meteorsData = await fetchMeteors({ trpcClient, massThresholdFilter: debouncedMassThreshold, year });
       meteorsData?.meteors && setMeteors(meteorsData.meteors)
       meteorsData?.metadata.year && setYear(meteorsData.metadata.year)
       if (meteorsData?.metadata.year) {
-        setShowYearChangeNotification(true);
+        setShowYearNotificationToTrue();
         setYear(meteorsData.metadata.year);
       }
     })()
-    setIsLoading(false);
+    setIsLoadingToFalse();
   }, [debouncedMassThreshold, year])
 
   return {
@@ -57,6 +59,6 @@ export const useMeteors = () => {
     massThreshold,
     invalidMassThreshold,
     showYearChangeNotification,
-    setShowYearChangeNotification
+    setShowYearNotificationToFalse
   }
 }
