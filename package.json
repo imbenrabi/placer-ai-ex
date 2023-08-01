@@ -1,9 +1,18 @@
 {
-  "name": "test-fullstack-env",
+  "name": "placer-ex",
   "scripts": {
+    "start:client": "cd packages/client && yarn dev",
+    "start:server": "cd packages/server && yarn dev",
     "clear-install": "rm -rf **/node_modules && rm -rf **/dist && yarn"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
   },
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "author": "imbenrabi <imbenrabi@gmail.com>",
+  "license": "MIT",
+  "private": true
 }

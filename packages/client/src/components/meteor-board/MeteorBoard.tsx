@@ -38,17 +38,16 @@ export const MeteorBoard = () => {
           />
         </Grid>
         <Grid>
-          <YearChangedPopover showYearChangeNotification={showYearChangeNotification} setShowYearChangeNotificationToFalse={setShowYearNotificationToFalse}>
-            <Input
-              label="Mass Threshold"
-              type="text"
-              value={massThreshold}
-              onChange={handleMassThresholdChange}
-              disabled={isLoading}
-              status={invalidMassThreshold ? 'error' : undefined}
-              helperText={invalidMassThreshold ? "use numbers" : undefined}
-            />
-          </YearChangedPopover>
+          <Input
+            label="Mass Threshold"
+            type="text"
+            value={massThreshold}
+            onChange={handleMassThresholdChange}
+            disabled={isLoading}
+            status={invalidMassThreshold ? 'error' : undefined}
+            helperText={invalidMassThreshold ? "use numbers" : undefined}
+          />
+          <YearChangedPopover showYearChangeNotification={showYearChangeNotification} setShowYearChangeNotificationToFalse={setShowYearNotificationToFalse} />
         </Grid>
       </Row>
       <Row>

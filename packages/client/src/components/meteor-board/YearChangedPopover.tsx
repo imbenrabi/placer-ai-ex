@@ -3,7 +3,7 @@ import { Grid, Popover, Row, Text } from '@nextui-org/react';
 
 
 interface YearChangedPopoverProps {
-  children: React.ReactNode;
+
   showYearChangeNotification: boolean;
   setShowYearChangeNotificationToFalse: () => void
 }
@@ -13,7 +13,7 @@ export const YearChangedPopover: React.FC<YearChangedPopoverProps> = ({ children
   return (
     <Popover isOpen={showYearChangeNotification} onOpenChange={setShowYearChangeNotificationToFalse} placement='right'>
       <Popover.Trigger>
-        {children}
+        <span />
       </Popover.Trigger>
       <Popover.Content>
         <Grid.Container justify='center'>
