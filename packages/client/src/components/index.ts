@@ -1,2 +1,2 @@
-export * from './PageLayout'
-export * from './meteor-board'
+export * from './layout';
+export * from './meteor-board';
