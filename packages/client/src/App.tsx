@@ -1,6 +1,7 @@
 import React from 'react';
 import { NextUIProvider } from '@nextui-org/react';
-import { MeteorBoard, PageLayout } from './components';
+import { PageLayout } from './Components';
+import { MeteorBoard } from './Pages';
 
 export const App = () => {
 

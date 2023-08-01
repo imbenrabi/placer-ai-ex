@@ -1,10 +1,10 @@
 import { useState, useEffect, ChangeEvent } from "react";
 import { useTrpcServer } from "./useTrpcServer";
 import { useDebounce } from "./useDebounce";
-import { ClientMeteor } from "../../../server/src/types";
 import { fetchMeteors, isNumber } from "../utils";
 import { FormElement } from "@nextui-org/react";
 import { useBoolean } from "./useBoolean";
+import { ClientMeteor } from "../../types";
 
 const INITIAL_YEAR = 1986 as const;
 
