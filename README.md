@@ -26,10 +26,13 @@ To start the client, use the following command in project root:
   yarn run start:client
 ```
 
-## Features
+## Tech Stack
 
 - trpc-ts-node server
-- trpc-ts-react-NextUI client
+- trpc-ts-react client
+- vite
+- jest
+- NextUI
 
 ## Features
 
