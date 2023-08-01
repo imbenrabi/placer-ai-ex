@@ -1,6 +1,6 @@
 # Placer EX - ROCKS
 
-ROCKS is a web application that allows users to interact with Nasa's meteor data. 
+ROCKS is a web application that allows users to interact with Nasa's meteor data.
 
 ## Installation
 
@@ -28,13 +28,18 @@ To start the client, use the following command in project root:
 
 ## Features
 
-- trpc server
-- trpc react client
+- trpc-ts-node server
+- trpc-ts-react-NextUI client
+
+## Features
+
+- data fetching and filtering
+- data visualization in a table 
 - debouncing free text requests
-- NextUI as design system
 
 ## Roadmap -> (what would I improve) 
 
 - server requests caching mechanism
 - better tests coverage (adding more component tests and e2e)
-- sorting
+- data sorting
+- adding additional params to interact with -> then adding charts
