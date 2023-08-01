@@ -1,8 +1,8 @@
+import { Grid, Input, Loading, Row, Table } from "@nextui-org/react";
 import React from "react";
-import { Input, Grid, Loading, Row, Table } from "@nextui-org/react";
+import { ClientMeteor } from "../../types";
 import { Header, YearChangedPopover } from "../Components";
 import { useMeteors } from "../hooks";
-import { ClientMeteor } from "../../types";
 
 const TableColumns: Array<keyof Omit<ClientMeteor, 'id'>> = ['name', 'mass', 'year']
 

@@ -1,5 +1,5 @@
-import React from "react"
-import { Grid } from "@nextui-org/react"
+import { Grid } from "@nextui-org/react";
+import React from "react";
 
 type PageLayoutProps = {
   children: React.ReactNode;
